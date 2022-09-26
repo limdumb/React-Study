@@ -15,6 +15,16 @@ const ConsoleButton = styled.button `
   border-radius: 10px;
   color: white;
   font-weight: bold;
+  &:hover {
+    background-color: #649ad5;
+  color: black;
+  cursor: pointer;
+  }
+  &:active {
+  box-shadow: 1px 1px 0 rgb(0,0,0,0.5);
+  position: relative;
+  top:2px;
+  }
 `
 
 const DisableButton = styled.button `
@@ -23,14 +33,28 @@ const DisableButton = styled.button `
   align-items: center;
   border-radius: 3px;
   border: none;
+  background-color: #5090D3;
   width: 90px;
   height: 70px;
   border-radius: 10px;
   margin-left: 10px;
   font-size: 20px;
   font-weight: bold;
+
+  &:active {
+  box-shadow: 1px 1px 0 rgb(0,0,0,0.5);
+  position: relative;
+  top:2px;
+  }
+
+  &:hover {
+  background-color: #649ad5;
+  color: black;
+  cursor: pointer;
+  }
 `
 const OnOffButton = styled.button `
+  margin-left: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,6 +67,16 @@ const OnOffButton = styled.button `
   border-radius: 10px;
   color: white;
   font-weight: bold;
+  &:hover {
+    background-color: #649ad5;
+  color: black;
+  cursor: pointer;
+  }
+  &:active {
+  box-shadow: 1px 1px 0 rgb(0,0,0,0.5);
+  position: relative;
+  top:2px;
+}
 `
 
 
@@ -50,18 +84,24 @@ const StyleDiv = styled.div `
   display: flex;
   justify-content: center;
   align-items: center;
-
+  justify-content: space-evenly;
 `
 
 export default function ClickButton() {
   const [activate, setActivate] = React.useState(false)
-  console.log(activate)
 
   const onOffToggle = (() => {
     setActivate(!activate)
   })
 
+  if(activate === true) {
+    console.log('Disabled') 
+  } else {
+    console.log('그코잠 화이팅!')
+  }
+
   return<StyleDiv>
+    <ConsoleButton onClick={() => console.log('그코잠 화이팅!')}>Console</ConsoleButton>
     <OnOffButton onClick={() => onOffToggle(setActivate)}>On/Off</OnOffButton>
     <DisableButton disabled={activate} onClick={() => setActivate(true)}>Disabled</DisableButton>
     </StyleDiv>
