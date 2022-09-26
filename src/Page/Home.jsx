@@ -1,5 +1,7 @@
 export default function Home() {
     return (
-    <button>하잇</button>
-    )
+    <button onClick={(() => {
+        console.log('그코잠 만세')
+    })}>하잇</button>
+    );
 }
