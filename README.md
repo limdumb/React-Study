@@ -1,70 +1,33 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# 💻 React Study 💻
+## 🐣 Study-Members 🐣
+1. 임경인 👑
+2. 최준호
+3. 정세민
+- - -
+Study 목표
+* React로 서로 커뮤니케이션을 하면서 진짜 현업에서 하는 것 처럼 프로젝트를 진행 할 수 있다.
+- - -
+Study 진행 방식
+* 코드리뷰
+  * 서로한테 피드백을 나누는것을 연습하기
+  * 서로의 코드를 리뷰하며 좋은기능이나 깔끔한 방법등에 대하여 질문하고 성장하기
+* 주마다 컨포넌트 하나씩 만들기
+  * 주제는 스터디장이 정함
+* PR을 보낸 후 당일 코드리뷰 진행때 셋중에 괜찮은 코드가 있으면 그 코드로 클론코딩 [ 메인코드 선정 ]
+  * 메인코드 선정 기준은 다수결
+* 제출기한
+  * 화요일 6시 전까지는 제출 [ 리뷰를 쓸시간, 그 써진리뷰 보고 확인 할 수 있는 시간이 필요함 ]
+  * 코드리뷰 작성시 쿠션어 사용
+  * 절때 남을 평가하는게 아닌 서로의 의견을 주고받으며 토론의 느낌이 되어야함 [ 기분 나빠하지 않기! ]
+* 한달 단위로 스터디의 방향성 변경
+  * 현재[9월26일 기준] 컨포넌트를 만들고 React, Jsx문법 등등 적응 되어야 할것들이 많기에 기본적 Component를 만드는 방향성
+  * 추후 추가적인 방향성에 대해서는 의논 예정
+- - -
+* 만나는 날짜
+  * 매주 수요일 7시부터 별도의 끝나는 시간은 없음
+  * 그날 클론 코딩이 끝나면 끝
+- - -
+* 만나는 플랫폼
+  * 게더타운으로 진행 예정 [ 캠 ]
+- - -
+추후 의논 후 업데이트 예정
