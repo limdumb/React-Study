@@ -1,9 +1,8 @@
 import './App.css';
-import { BrowserRouter, Route } from 'react-router-dom';
 import Home from './MainPage/Home'
 
 function App() {
-  return (
+  return(
     <Home></Home>
   )
 }
