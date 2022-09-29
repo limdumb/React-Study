@@ -1,7 +1,7 @@
-
+import SwitchToggle from '../Components/SwitchToggle'
 
 export default function Assignment() {
   return(
-    <button>Hi</button>
+    <SwitchToggle></SwitchToggle>
   )
 }
