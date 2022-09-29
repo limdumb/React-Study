@@ -8,9 +8,8 @@ const MyDiv = styled.div `
   align-items: center;
   flex-direction: column;
 `
+export default function Home() {
 
-export default function main() {
-  
   return(
     <MyDiv>
       <h1>First React Study Assignment</h1>
