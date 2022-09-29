@@ -79,15 +79,38 @@ const OnOffButton = styled.button `
 }
 `
 
-
-const StyleDiv = styled.div `
+const AssignmentButton = styled.button `
+  margin-left: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
+  border-radius: 3px;
+  background-color: #5090D3;
+  border: 1px solid black;
+  width: 90px;
+  height: 70px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  &:hover {
+    background-color: #649ad5;
+  color: black;
+  cursor: pointer;
+  }
+  &:active {
+  box-shadow: 1px 1px 0 rgb(0,0,0,0.5);
+  position: relative;
+  top:2px;
+}
+`
+
+const StyleDiv = styled.div `
+  display: flex;
 `
 
 export default function ClickButton() {
+
   const [activate, setActivate] = React.useState(false)
 
   const onOffToggle = (() => {
@@ -95,7 +118,7 @@ export default function ClickButton() {
   })
 
   if(activate === true) {
-    console.log('Disabled') 
+    console.log('Disabled')
   } else {
     console.log('그코잠 화이팅!')
   }
@@ -104,7 +127,9 @@ export default function ClickButton() {
     <ConsoleButton onClick={() => console.log('그코잠 화이팅!')}>Console</ConsoleButton>
     <OnOffButton onClick={() => onOffToggle(setActivate)}>On/Off</OnOffButton>
     <DisableButton disabled={activate} onClick={() => setActivate(true)}>Disabled</DisableButton>
+    <a href="/assignment" style={{ textDecoration: 'none' }}>
+      <AssignmentButton>Assignment Move</AssignmentButton>
+    </a>
     </StyleDiv>
-
   
 }
