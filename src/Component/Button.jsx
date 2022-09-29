@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function ClickButton() {
   return (
     <div>
@@ -19,6 +21,9 @@ export default function ClickButton() {
       >
         없애버렷!
       </button>
+      <Link to="/switch">
+        <button>라우터터터터 </button>
+      </Link>
     </div>
   );
 }
