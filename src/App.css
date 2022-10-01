@@ -1,4 +1,29 @@
+html, body, h1, h2, h3, button{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
 .App {
+  min-height: 100vh;
+  background-color: darkgrey;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+
+/* __________________________________________________ */
+
+
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +60,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
