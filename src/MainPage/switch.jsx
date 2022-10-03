@@ -23,6 +23,10 @@ function DarkMode() {
         <input
           type="checkbox"
           onChange={() => {
+            setTimeout(() => {
+              alert("그 코딩실력에 잠이와? TIL은 썼니?");
+            }, 3000);
+
             setDarkMode(isDarkModeOn ? false : true);
           }}
         />
