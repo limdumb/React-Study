@@ -18,10 +18,8 @@ export default function SwitchToggle() {
   async function onOffAlert() {
 
     let thirdAlert = new Promise ((resolve, reject) => {
-      if(toggle === true){ 
-        setTimeout(() => resolve("그 코딩실력에 잠이와? TIL은 썼니?"), 3000)
-      } else {
-        return null
+      if(toggle === true) {
+        setTimeout(() => resolve("그 코딩실력에 잠이와? TIL은 썼니?"),3000)
       }
     })
     let result = await thirdAlert
@@ -33,6 +31,7 @@ export default function SwitchToggle() {
     return setToggle(!toggle)
   })
 
+  onOffAlert()
 
   return (
     <StyleDiv>
@@ -44,6 +43,7 @@ export default function SwitchToggle() {
         display: "flex",
         alignItems: "center",
       }}onClick={onOffToggle}>
+
         <span style={{
           backgroundColor: "white",
           width: 27,
@@ -51,7 +51,9 @@ export default function SwitchToggle() {
           display: "inline-block",
           borderRadius: 30,
           marginLeft: 2,
+          marginRight: 2,
         }}></span>
+
       </div>
     </StyleDiv>
   );
