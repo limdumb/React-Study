@@ -21,11 +21,12 @@ export default function SwitchToggle() {
       if(toggle === true) {
         setTimeout(() => resolve("그 코딩실력에 잠이와? TIL은 썼니?"),3000)
       }
-    })
-    let result = await thirdAlert
-    alert(result)
+    });
+    let result = await thirdAlert;
+    alert(result);
     
-  }
+    console.log(result)
+  };
 
   const onOffToggle = (() => {
     return setToggle(!toggle)
@@ -42,6 +43,7 @@ export default function SwitchToggle() {
         borderRadius: 70,
         display: "flex",
         alignItems: "center",
+        transition: "all"
       }}onClick={onOffToggle}>
 
         <span style={{
@@ -52,6 +54,8 @@ export default function SwitchToggle() {
           borderRadius: 30,
           marginLeft: 2,
           marginRight: 2,
+          transition: "transform 300ms ease-out",
+          transform: toggle ? "translate(37px, 0px)" : "translate(0px, 0px)"
         }}></span>
 
       </div>
