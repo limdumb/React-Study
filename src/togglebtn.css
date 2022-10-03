@@ -1,0 +1,54 @@
+
+.toggle{
+    position: relative;
+    background-color: black;
+    width: 200px;
+    height: 100px;
+    border-radius: 50px;
+    margin: 0 auto;
+}
+
+
+.toggle_input{
+    width: 0;
+    height: 0;
+    margin: 0;
+}
+
+
+.toggle_span{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:gray;
+    border-radius: 50px;
+}
+
+
+.toggle_span::before{
+    position: absolute;
+    content: "OFF";
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    left: 4px;
+    bottom: 25%;
+    border-radius: 50%;
+    transition: 0.6s ease-in-out;
+    text-align: center;
+    line-height: 49px;
+    font-weight: bolder;
+}
+
+.toggle_input:checked + .toggle_span{
+    background-color: darkcyan;
+    
+}
+.toggle_input:checked + .toggle_span::before{
+    background-color: darkblue;
+    content: "ON";
+    color: white;
+    left: 146px;
+}

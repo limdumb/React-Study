@@ -1,10 +1,11 @@
 import React from "react";
+import Togglebtn from "./togglebtn";
 
 
-
-function Main(){
+function Main(props){
     return(
         <> 
+            <Togglebtn/>   
         </>
     )
 }
