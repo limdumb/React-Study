@@ -10,32 +10,30 @@ const StyleDiv = styled.div `
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 `
 
 export default function SwitchToggle() {
   const [toggle, setToggle] = useState(false);
 
   async function onOffAlert() {
-
+    setToggle(!toggle)
     let thirdAlert = new Promise ((resolve, reject) => {
-      if(toggle === true) {
-        setTimeout(() => resolve("그 코딩실력에 잠이와? TIL은 썼니?"),3000)
+      if(!toggle) {
+        setTimeout(() => resolve("그 코딩실력에 잠이와? TIL은 썼니?"),2000)
       }
     });
     let result = await thirdAlert;
     alert(result);
-    
-    console.log(result)
+    console.log(setTimeout)
   };
+  
 
-  const onOffToggle = (() => {
-    return setToggle(!toggle)
-  })
 
-  onOffAlert()
 
   return (
     <StyleDiv>
+      <h1>My Contents Switch</h1>
       <div style={{
         backgroundColor: toggle ? '#2196F3' : 'gray',
         width: 70,
@@ -44,7 +42,7 @@ export default function SwitchToggle() {
         display: "flex",
         alignItems: "center",
         transition: "all"
-      }}onClick={onOffToggle}>
+      }}onClick={onOffAlert}>
 
         <span style={{
           backgroundColor: "white",
