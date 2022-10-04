@@ -29,6 +29,6 @@ export default function SwitchToggle() {
 //함수 선언식으로 호이스팅 적용
 function TogleAlert() {
     setTimeout(() => {
-        alert('그 코딩실력에 잠이와? TIL은 썼니?')
+        alert('그 코딩실력에 잠이와? TIL은 썼니??')
     }, 3000);
 }
