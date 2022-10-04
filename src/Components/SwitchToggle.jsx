@@ -15,9 +15,9 @@ export default function SwitchToggle() {
     return (
         <>
         <StyledDiv>
-        <Link to="/"><FontAwesomeIcon icon={faHouse} size="5x"/></Link>
+        <Link to="/"  className="house"><FontAwesomeIcon icon={faHouse} size="5x"/></Link>
         <h1>제껴보세요</h1>
-        <label className="switch">
+        <label className="switch"> 
             <input type="checkbox" onClick={TogleAlert}></input>
             <span className="slider round"></span>
         </label>

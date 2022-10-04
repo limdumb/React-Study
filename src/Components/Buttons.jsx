@@ -5,7 +5,8 @@ const StyledButton = styled.button`
     height: 200px;
     width: 200px;
     margin: 50px;
-    border-radius: 200px; 
+    border-radius: 200px;
+    font-size: 20px;
     `;
 
 export default function Buttons() {
