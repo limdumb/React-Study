@@ -2,16 +2,26 @@ import React from 'react';
 import './SwitchToggle.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+
+const StyledDiv = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`  ;
 
 export default function SwitchToggle() {
     return (
         <>
-        <FontAwesomeIcon icon={faHouse} size="5x"/>
+        <StyledDiv>
+        <Link to="/"><FontAwesomeIcon icon={faHouse} size="5x"/></Link>
         <h1>제껴보세요</h1>
         <label className="switch">
             <input type="checkbox" onClick={TogleAlert}></input>
             <span className="slider round"></span>
         </label>
+        </StyledDiv>
         </>     
     )
 }

@@ -56,19 +56,8 @@ input:checked + .slider:before {
     border-radius: 50%;
   }
 
-body {
-  height: 100vh;
-}
-
-div {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
 
 h1 {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 50px;
+  margin: 50px 0;
   font-size: 200px;
 }
