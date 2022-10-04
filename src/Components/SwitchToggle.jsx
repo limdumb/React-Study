@@ -1,6 +1,6 @@
 import './SwitchToggle.css';
 
-const SwitchToggle = () => {
+export default function SwitchToggle() {
     return (
         <label className="switch">
             <input type="checkbox"></input>
@@ -9,4 +9,3 @@ const SwitchToggle = () => {
     )
 }
 
-export default SwitchToggle;
