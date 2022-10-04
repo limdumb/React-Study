@@ -7,12 +7,10 @@ import Toggle from './Pages/Toggle';
 function App() {
   return (
     <BrowserRouter>
-    <div>
     <Routes>
       <Route path="/" element={<Buttons />} />
       <Route path="/toggle" element={<Toggle />} />
     </Routes>
-    </div>
     </BrowserRouter>
   );
 }
