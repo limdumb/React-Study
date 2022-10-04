@@ -7,6 +7,7 @@ const StyledButton = styled.button`
     margin: 50px;
     border-radius: 200px;
     font-size: 20px;
+    :hover {background-color:skyblue;}
     `;
 
 export default function Buttons() {
