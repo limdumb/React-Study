@@ -44,18 +44,9 @@
 }
 body {
   height: 100vh;
-}
-
-div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-button {
-  height: 200px;
-  width: 200px;
-  margin: 50px;
-  border-radius: 200px; 
-}
 
