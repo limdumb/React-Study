@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+div {
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  height: 300px;
+  width: 300px;
+  margin: 50px;
+  border-radius: 200px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

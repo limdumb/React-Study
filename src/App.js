@@ -1,10 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
 import Home from './Page/Home';
+import SwitchToggle from './Page/SwitchToggle';
 
 function App() {
   return (
-    <Home></Home>
+    <div>
+    <SwitchToggle/>
+    <Home/>
+    </div>
   );
 }
 
