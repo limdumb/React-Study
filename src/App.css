@@ -8,6 +8,7 @@ html,body,h1,h2,h3,h4,ul,li,ol,button{
 a{  
     /* a태그의 기본 밑줄,밑 색상변경 */
     text-decoration: none;
+    color: black;
 }
 
 li{
@@ -21,6 +22,7 @@ body{
 }
 
 /* body *{
+     임시공사중
     outline: 1px solid red;
 } */
 
@@ -42,6 +44,7 @@ body{
 
 /********************************상단영역css********************************/
 .Header{
+    /* 최상위 부모 및 컴포넌트 */
     background-color: #787878;}
 
 .GNB_dot_ul{
@@ -57,12 +60,17 @@ body{
     font-weight: bold;
     cursor: pointer;}
 
-.GNB_dot_ul>li:nth-child(2):hover .GNB_sub{
+.GNB_dot_ul>li:hover{
+    /* 상위li호버시 색상변경 */
+    background-color: rgba(255, 255, 255, 0.404);
+    border-radius: 10px;}
+
+.GNB_dot_ul .GNB_dot_li:hover .GNB_sub{
     /* ul두번째 자식에 마우스 오버시~ div보이게 */
    height: 100%;}
 
 .GNB_sub{
-    /*포지션으로 부모밑으로 및 기본값 0*/
+    /*포지션속성 : 부모밑으로 및 기본값 0*/
     position: absolute;
     height: 0;
     overflow: hidden;
@@ -73,24 +81,31 @@ body{
     background-color: #787878;}
 
 .GNB_sub_ol{
+    /* 자식들 가로정렬밑 상위부모 크기맞춤 */
     display: flex;
     justify-content: space-evenly;
-    align-items: center;}
+    align-items: center;
+    height: 100%;}
+
+.GNB_sub li{
+    padding: 5px;}
 
 .GNB_sub li:hover{
-    background-color: blue;
+    /* li호버시 색상변경 */
+    background-color: rgba(255, 255, 255, 0.404);
     border-radius: 10px;}
-
-
 
 /********************************메인영역css********************************/
 .Main{
+    /* 상위 App클래스로인한 정렬속성 */
     background-color: #dcdcdc;
     flex: 1;
-}
+    /* 자식요소 가운데정렬 */
+    display: flex;
+    justify-content: center;
+    align-items: center;}
 
 /********************************하단영역css********************************/
 .Footer{
     background-color: #dda0dd;
-    flex-basis: 100px;
-}
+    flex-basis: 100px;}

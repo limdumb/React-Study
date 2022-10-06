@@ -3,16 +3,26 @@ import "./App.css";
 import Header from "./component/Header"
 import Main from "./component/Main"
 import Footer from "./component/Footer"
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 
-function Add(){
+
+
+
+
+function App(){
     return(
-        <div className="App">
-            <Header/>
-            <Main/>
-            <Footer/>
-        </div>
+        <BrowserRouter>
+            <div className="App">
+                <Header/>
+                <Main/>
+                <Footer/>
+            </div>
+            <Routes>
+                <Route path="/" element={<Main/>}/>
+            </Routes>
+        </BrowserRouter>
     )
 }
 
-export default Add;
+export default App;
