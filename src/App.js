@@ -7,7 +7,10 @@ import Footer from "./component/Footer"
 
 function Add(){
     return(
-        <div>
+        <div className="App">
+            <Header/>
+            <Main/>
+            <Footer/>
         </div>
     )
 }

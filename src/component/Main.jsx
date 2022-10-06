@@ -1,8 +1,8 @@
 
 function Main(){
     return(
-        <div>
-
+        <div className="Main ibx">
+            <h1>메인영역</h1>
         </div>
     )
 }

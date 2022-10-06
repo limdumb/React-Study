@@ -1,8 +1,8 @@
 
 function Footer(){
     return(
-        <div>
-
+        <div className="Footer ibx">
+            <h1>하단영역</h1>
         </div>
     )
 }

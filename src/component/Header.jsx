@@ -1,8 +1,8 @@
 
 function Header(){
     return(
-        <div>
-
+        <div className="Header ibx">
+            <h1>상단영역</h1>
         </div>
     )
 }

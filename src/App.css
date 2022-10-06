@@ -1,0 +1,54 @@
+/********************************기본초기화********************************/
+html,body,h1,h2,h3,h4,ul,li,ol,button{
+    /* 각태그들의 기본 마진,패딩 초기화 */
+    padding: 0;
+    margin: 0;
+}
+
+a{  
+    /* a태그의 기본 밑줄,밑 색상변경 */
+    text-decoration: none;
+}
+
+li{
+    /* li태그 블릿제거 */
+    list-style: none;
+}
+
+body{
+    height: 100vh;
+    background-color: darkgray;
+}
+
+/********************************공통css********************************/
+.App{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.ibx{
+    text-align: center;
+    width: 900px;
+}
+
+
+/********************************상단영역css********************************/
+.Header{
+    background-color: #787878;
+    flex-basis: 150px;
+}
+
+/********************************메인영역css********************************/
+.Main{
+    background-color: #dcdcdc;
+    flex: 1;
+}
+
+/********************************하단영역css********************************/
+.Footer{
+    background-color: #dda0dd;
+    flex-basis: 100px;
+}
