@@ -20,6 +20,10 @@ body{
     background-color: darkgray;
 }
 
+/* body *{
+    outline: 1px solid red;
+} */
+
 /********************************공통css********************************/
 .App{
     display: flex;
@@ -30,6 +34,7 @@ body{
 }
 
 .ibx{
+    /* 컴포넌트영역 공통 속성 */
     text-align: center;
     width: 900px;
 }
@@ -37,9 +42,46 @@ body{
 
 /********************************상단영역css********************************/
 .Header{
-    background-color: #787878;
-    flex-basis: 150px;
-}
+    background-color: #787878;}
+
+.GNB_dot_ul{
+    /* 자식 li가로로 정렬 및 하위포지션 부모자격 */
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;}
+
+.GNB_dot_ul>li{
+    /*ul자식요소 설정  */
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;}
+
+.GNB_dot_ul>li:nth-child(2):hover .GNB_sub{
+    /* ul두번째 자식에 마우스 오버시~ div보이게 */
+   height: 100%;}
+
+.GNB_sub{
+    /*포지션으로 부모밑으로 및 기본값 0*/
+    position: absolute;
+    height: 0;
+    overflow: hidden;
+    top: 100%;
+    left: 0;
+    right: 0;
+    transition: 1s;
+    background-color: #787878;}
+
+.GNB_sub_ol{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;}
+
+.GNB_sub li:hover{
+    background-color: blue;
+    border-radius: 10px;}
+
+
 
 /********************************메인영역css********************************/
 .Main{
