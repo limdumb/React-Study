@@ -8,7 +8,7 @@ function Header(){
                 <h1>React Study</h1>
                 <nav className="GNB">
                     <ul className="GNB_dot_ul">
-                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="*">Home</Link></li>
                         <li className="GNB_dot_li">
                             <span>과제</span>
                             <div className="GNB_sub">
