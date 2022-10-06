@@ -80,6 +80,9 @@ export default function ClickButton() {
     <a href="/assignment" style={{ textDecoration: 'none' }}>
       <StyledButton>Assignment Move</StyledButton>
     </a>
+    <a href="/reting" style={{ textDecoration: 'none' }}>
+      <StyledButton>Reting Move</StyledButton>
+    </a>
     </StyleDiv>
   
 }
