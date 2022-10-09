@@ -20,7 +20,8 @@ export default function Buttons() {
         e.target.disabled = true;
     })}
     >비활성화</StyledButton>
-    <Link to="/toggle"><StyledButton>라우터</StyledButton></Link>
+    <Link to="/toggle"><StyledButton>스위치</StyledButton></Link>
+    <StyledButton>레이팅</StyledButton>
     </>
     );
 }
