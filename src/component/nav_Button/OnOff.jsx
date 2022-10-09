@@ -1,4 +1,7 @@
+import { useState } from "react";
 import styled from "styled-components";
+import classNames from "classnames";
+
 /*
 1. 기본적인 toggle형태의 모습을갖는다
 2. Click시 toggle버튼의 원형이 움직인다
@@ -8,32 +11,25 @@ import styled from "styled-components";
 
 
 function Onoff(){
+    const [Event, setEvent] = useState(false);
+    
+
+    const CK = ()=>{
+
+        if(Event === false){
+            setTimeout(()=>{
+                alert("[ 그 코딩실력에 잠이와? TIL은 썼니? ]");
+            },1600);
+        }
+        setEvent(!Event);
+
+    }
     return(
         <>
-           <Styleddiv>
-                <Styledspan></Styledspan>
-           </Styleddiv>
+           <div className="OnOff_div" style={{backgroundColor : Event ? "#00649d":'#7c7673'}}>
+                <span className={classNames("OnOff_span", {"stap1" : Event})} onClick={CK}><p>{Event ? "ON" : "Off"}</p></span>
+           </div>
         </>
     )
 }
-
-const Styleddiv = styled.div`
-    position: relative;
-    background-color : black;
-    border : 1px solid blue;
-    width : 90%;
-    height : 50px;
-    border-radius: 50px;
-`
-const Styledspan = styled.span`
-    position: absolute;
-    display : block;
-    background-color : red;
-    border : 1px solid blue;
-    width : 50px;
-    height : 50px;
-    border-radius: 50px;
-    
-`
-
 export default Onoff;

@@ -98,7 +98,7 @@ body{
 /********************************메인영역css********************************/
 .Main{
     /* 상위 App클래스로인한 정렬속성 */
-    background-color: #dcdcdc;
+    background-color: #d1c4b5;
     flex: 1;
     /* 자식요소 가운데정렬 */
     display: flex;
@@ -113,4 +113,38 @@ body{
 .test{
     position: relative;
     position: absolute;
-}
+    box-sizing: border-box;
+    background-color: darkgray;}
+
+
+/******************************** On/Off css********************************/
+.OnOff_div{
+    position: relative;
+    /* border : 0px solid black; */
+    box-shadow: 0px 5px 5px 0px black;
+    width : 90%;
+    height : 50px;
+    border-radius: 50px;}
+
+.OnOff_span{
+    position: absolute;
+    display : block;
+    background-color : #e2e2e2;
+    border : 5px solid black;
+    width : 100px;
+    height : 100px;
+    box-sizing: border-box;
+    top: -50%;  
+    border-radius: 0;
+    transition: 1.5s ease-out;}
+
+.OnOff_span p{
+    line-height: 4.1;
+    font-weight: bold;
+    background-color: none;}
+
+.stap1{
+    transform: scale(2) translate(350px, 0);
+    background-color: #00a5fa;
+    border-radius: 50%;}
+
