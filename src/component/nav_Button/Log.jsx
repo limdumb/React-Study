@@ -9,11 +9,11 @@ function Log(){
         if(select === false){
         setSelect(!select);
         setText("켜짐");
-        console.log(select);
+        console.log("그코잠화이팅!");
         } else{
             setSelect(!select);
             setText("꺼짐");
-            console.log(select);
+            
         }  
 }
     return(
