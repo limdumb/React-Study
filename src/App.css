@@ -110,3 +110,7 @@ body{
     background-color: #dda0dd;
     flex-basis: 100px;}
 
+.test{
+    position: relative;
+    position: absolute;
+}
