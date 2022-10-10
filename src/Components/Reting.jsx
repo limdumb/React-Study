@@ -36,21 +36,22 @@ export default function Reting() {
 
   const retingItem = []
 
-  for(let i=1; i < count; i++) {
-      retingItem.push(<StarImage src={FullStar} onClick={() => {setCount(i)}}/>)
+  for(let i=1; i <= count; i++) {
+    retingItem.push(<StarImage src={FullStar} onClick={() => {setCount(i)}}/>)
   }
 
+  for(let i=1; i <= 5-count; i++) {
+    retingItem.push(<EmptyImage src={EmptyStar} onClick={() => {setCount(count+i)}}/>)
+  }
 
-  console.log(retingItem)
+  console.log(count)
 
 
   return (
-    <div>
-      <EmptyImage src={EmptyStar} onClick={() => setCount(0)}/>
-      <EmptyImage src={EmptyStar} onClick={() => setCount(1)}/>
-      <EmptyImage src={EmptyStar} onClick={() => setCount(2)}/>
-      <EmptyImage src={EmptyStar} onClick={() => setCount(3)}/>
-      <EmptyImage src={EmptyStar} onClick={() => setCount(4)}/>
+    <div style={{
+      borderRadius:10,
+      backgroundColor : 'rgba(255, 255, 255, 0.5)',
+    }}>
       {retingItem}
     </div>
   );
