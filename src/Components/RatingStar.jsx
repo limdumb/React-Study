@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faStar as regularStar} from "@fortawesome/free-regular-svg-icons"
 import { faStar as solidStar} from "@fortawesome/free-solid-svg-icons"
 import { useState } from "react"
+import styled from "styled-components"
 
 
 export default function RatingStar() {
@@ -11,20 +12,30 @@ export default function RatingStar() {
     const [icons4, setIcon4] = useState(regularStar)
     const [icons5, setIcon5] = useState(regularStar)
     const Font = [
-    <FontAwesomeIcon icon={icons} size='8x' onClick={() => {
-        setIcon(solidStar)}}></FontAwesomeIcon>,
+   <FontAwesomeIcon icon={icons} size='8x' onClick={() => {
+        setIcon(solidStar)
+        setIcon2(regularStar)
+        setIcon3(regularStar)
+        setIcon4(regularStar)
+        setIcon5(regularStar)}}></FontAwesomeIcon>,
     <FontAwesomeIcon icon={icons2} size='8x' onClick={() => {
         setIcon(solidStar)
-        setIcon2(solidStar)}}></FontAwesomeIcon>,
+        setIcon2(solidStar)
+        setIcon3(regularStar)
+        setIcon4(regularStar)
+        setIcon5(regularStar)}}></FontAwesomeIcon>,
     <FontAwesomeIcon icon={icons3} size='8x' onClick={() => {
         setIcon(solidStar)
         setIcon2(solidStar)
-        setIcon3(solidStar)}}></FontAwesomeIcon>,
+        setIcon3(solidStar)
+        setIcon4(regularStar)
+        setIcon5(regularStar)}}></FontAwesomeIcon>,
     <FontAwesomeIcon icon={icons4} size='8x' onClick={() => {
         setIcon(solidStar)
         setIcon2(solidStar)
         setIcon3(solidStar)
-        setIcon4(solidStar)}}></FontAwesomeIcon>,
+        setIcon4(solidStar)
+        setIcon5(regularStar)}}></FontAwesomeIcon>,
     <FontAwesomeIcon icon={icons5} size='8x' onClick={() => {
         setIcon(solidStar)
         setIcon2(solidStar)
