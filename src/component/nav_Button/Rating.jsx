@@ -31,25 +31,25 @@ function Rating(){
     // 채울값 뒤에 option index가온다면 지정한index 부터 해당값을채우는거다
     // Array.map(callback함수 => 현재값, 인덱스 , 배열)
     const [repeat, steRepeat] = useState(Array(5).fill(0).map((value,index)=> index + 1));
-  
+    const [currentValue, setCurrentValue] = useState(0);
         
     const log = (Event)=>{
         const ev = Event.target.value;
         console.log(ev);
-     
+        setCurrentValue(ev)
+
     }
     
     return(
         <>
         {repeat.map((value,index)=>{
             return(
-                <label key={index} className="rating_label">
+                <label key={index} className="rating_label" style={{backgroundColor: repeat[index] <= currentValue ? "red" : "gray"}}>
                     <input type="checkbox" className="rating_input" value={repeat[index]}
                     onClick={log}/>
                 </label>
             )
         })}
-        
         </>
     )
 }
