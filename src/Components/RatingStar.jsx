@@ -4,7 +4,10 @@ import { faStar as solidStar} from "@fortawesome/free-solid-svg-icons"
 import { useState } from "react"
 import styled from "styled-components"
 
-
+const Star = styled.span`
+    cursor: pointer;
+    :hover: {color: red;}
+`
 export default function RatingStar() {
     const [icons, setIcon] = useState(regularStar)
     const [icons2, setIcon2] = useState(regularStar)
@@ -49,7 +52,7 @@ export default function RatingStar() {
 
     return(
     <>
-    {Font}
+    <Star>{Font}</Star>
     </>
     )
 }
