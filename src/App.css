@@ -1,5 +1,5 @@
 /********************************기본초기화********************************/
-html,body,h1,h2,h3,h4,ul,li,ol,button{
+html,body,h1,h2,h3,h4,ul,li,ol,button,input,label{
     /* 각태그들의 기본 마진,패딩 초기화 */
     padding: 0;
     margin: 0;
@@ -21,10 +21,10 @@ body{
     background-color: darkgray;
 }
 
-/* body *{
-     임시공사중
-    outline: 1px solid red;
-} */
+body *{
+     /* 임시공사중 */
+    /* outline: 1px solid red; */
+}
 
 /********************************공통css********************************/
 .App{
@@ -152,11 +152,34 @@ body{
 
 /******************************** Rating css********************************/
 
-.rating_label{
+
+
+/* https://css-tricks.com/using-box-shadows-and-clip-path-together/ 
+clip-path box-shadow 문제에 관하여*/
+.rating{
+    display: flex;
+    filter: drop-shadow(-10px 5px 5px rgba(50, 50, 0, 0.5));
+}
+
+.rating_point{
+    position: relative;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    background-color: #f5efec59;
     width: 100px;
     height: 100px;
+    
+}
+
+
+.rating_label{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-    transition: 0.5s;
+    transition: 0.8s;
+    
 }
 
 .rating_input{

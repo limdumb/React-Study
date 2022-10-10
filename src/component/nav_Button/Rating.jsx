@@ -36,6 +36,9 @@ function Rating(){
     const [currentValue, setCurrentValue] = useState(0);
     // 오버시의 별의 값을 저장
     const [hoverValue, setHoveValue] = useState(0);
+
+    // 반별의 값을저장
+    const [half, setHalf] = useState(0);
         
     const log = (Event)=>{
         // console.log("Click 콘솔:",Event.target.value)
@@ -46,24 +49,26 @@ function Rating(){
     
     return(
         <>
+        <div className="rating">
         {repeat.map((value,index)=>{
             return(
-                <label key={index}
+                <div className="rating_point">
+                    <label key={index}
                         className="rating_label"
-                        style={{backgroundColor: repeat[index] <= (currentValue || hoverValue) ? "red" : "gray"}}>
-
-                    <input type="checkbox"
-                        className="rating_input"
-                        value={repeat[index]}
-                        onClick={log}
-                        onDoubleClick={()=>{setCurrentValue(0)}}
-                        onMouseOver={()=>{setHoveValue(repeat[index])}}
-
-                        onMouseLeave={()=>{setHoveValue(0)}}
-                    />
-                </label>
+                        style={{backgroundColor: repeat[index] <= (currentValue || hoverValue) ? "#ffdf2b" : "gray"}}>
+                        <input type="checkbox"
+                            className="rating_input"
+                            value={repeat[index]}
+                            onClick={log}
+                            onDoubleClick={()=>{setCurrentValue(0)}}
+                            onMouseOver={()=>{setHoveValue(repeat[index])}}
+                            onMouseOut={()=>{setHoveValue(0)}}
+                        />
+                    </label>
+                </div>
             )
         })}
+        </div>
         </>
     )
 }
