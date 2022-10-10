@@ -26,7 +26,7 @@ https://codepen.io/bennettfeely/pen/azJWWX/
 https://heropy.blog/2019/05/26/html-elements/
 */
 function Rating(){
-    console.log("정상실행");
+    // console.log("정상실행");
     // Array.fill(채울값,시작,끝) => 간단하게생각하자
     // 채울값 뒤에 option index가온다면 지정한index 부터 해당값을채우는거다
     // Array.map(callback함수 => 현재값, 인덱스 , 배열)
@@ -34,19 +34,26 @@ function Rating(){
     const [currentValue, setCurrentValue] = useState(0);
         
     const log = (Event)=>{
-        const ev = Event.target.value;
-        console.log(ev);
-        setCurrentValue(ev)
-
+        const activate = Event.target.value;
+        // console.log(activate);
+        setCurrentValue(activate)
     }
+
     
     return(
         <>
         {repeat.map((value,index)=>{
             return(
-                <label key={index} className="rating_label" style={{backgroundColor: repeat[index] <= currentValue ? "red" : "gray"}}>
-                    <input type="checkbox" className="rating_input" value={repeat[index]}
-                    onClick={log}/>
+                <label key={index}
+                        className="rating_label"
+                        style={{backgroundColor: repeat[index] <= currentValue ? "red" : "gray"}}
+                        onDoubleClick={()=>{setCurrentValue(0)}}>
+
+                    <input type="checkbox"
+                        className="rating_input"
+                        value={repeat[index]}
+                        onClick={log}/>
+
                 </label>
             )
         })}
