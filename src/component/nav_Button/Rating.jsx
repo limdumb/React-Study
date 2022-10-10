@@ -21,6 +21,7 @@ import { useState } from "react";
 
 
 
+
 https://bennettfeely.com/clippy/
 https://codepen.io/bennettfeely/pen/azJWWX/
 https://heropy.blog/2019/05/26/html-elements/
@@ -31,14 +32,17 @@ function Rating(){
     // 채울값 뒤에 option index가온다면 지정한index 부터 해당값을채우는거다
     // Array.map(callback함수 => 현재값, 인덱스 , 배열)
     const [repeat, steRepeat] = useState(Array(5).fill(0).map((value,index)=> index + 1));
+    // 클릭된 별의 값을 저장
     const [currentValue, setCurrentValue] = useState(0);
+    // 오버시의 별의 값을 저장
+    const [hoverValue, setHoveValue] = useState(0);
         
     const log = (Event)=>{
-        const activate = Event.target.value;
-        // console.log(activate);
-        setCurrentValue(activate)
+        // console.log("Click 콘솔:",Event.target.value)
+        const activate1 = Event.target.value;
+        setCurrentValue(activate1);
+        // console.log("Click의 변한값:",currentValue)
     }
-
     
     return(
         <>
@@ -46,14 +50,17 @@ function Rating(){
             return(
                 <label key={index}
                         className="rating_label"
-                        style={{backgroundColor: repeat[index] <= currentValue ? "red" : "gray"}}
-                        onDoubleClick={()=>{setCurrentValue(0)}}>
+                        style={{backgroundColor: repeat[index] <= (currentValue || hoverValue) ? "red" : "gray"}}>
 
                     <input type="checkbox"
                         className="rating_input"
                         value={repeat[index]}
-                        onClick={log}/>
+                        onClick={log}
+                        onDoubleClick={()=>{setCurrentValue(0)}}
+                        onMouseOver={()=>{setHoveValue(repeat[index])}}
 
+                        onMouseLeave={()=>{setHoveValue(0)}}
+                    />
                 </label>
             )
         })}
