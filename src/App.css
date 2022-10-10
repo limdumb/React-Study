@@ -148,3 +148,17 @@ body{
     background-color: #00a5fa;
     border-radius: 50%;}
 
+
+
+/******************************** Rating css********************************/
+
+.star_input{
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    
+}
+
+.star_label{
+    background-color: red;
+}
