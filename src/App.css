@@ -152,13 +152,16 @@ body{
 
 /******************************** Rating css********************************/
 
-.star_input{
-    background-color: black;
+.rating_label{
+    background-color: gray;
     width: 100px;
     height: 100px;
-    
+    border: 1px solid black;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 }
 
-.star_label{
-    background-color: red;
+.rating_input{
+    width: 0;
+    height: 0;
 }
+

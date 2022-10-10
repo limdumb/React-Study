@@ -1,5 +1,4 @@
 import { useState } from "react";
-import classNames from "classnames";
 
 
 /*
@@ -17,7 +16,8 @@ import classNames from "classnames";
 
 3. 해당 별이 클릭되었을시에 해당별의 value값을 변수에저장한다!
 
-4. 저장된값을 어떠한값이랑 비교?
+4. 클릭이 되어 저장된 값은 현재의 별과값과  저장된값을 비교한다.
+
 
 
 
@@ -26,34 +26,30 @@ https://codepen.io/bennettfeely/pen/azJWWX/
 https://heropy.blog/2019/05/26/html-elements/
 */
 function Rating(){
-    // const [star, setstar] = useState(Array(5).fill(0).map((v,i)=> i + 1));
-    const [star, setstar] = useState(null);
-
-    const [star1, setstar1] = useState(1);
-    const [star2, setstar2] = useState(2);
-    const [star3, setstar3] = useState(3);
-    const [star4, setstar4] = useState(4);
-    const [star5, setstar5] = useState(5);
-    
-
- 
-    const test = (el)=>{
-        setstar(el.target.value)
-    }   
-    
+    console.log("정상실행");
+    // Array.fill(채울값,시작,끝) => 간단하게생각하자
+    // 채울값 뒤에 option index가온다면 지정한index 부터 해당값을채우는거다
+    // Array.map(callback함수 => 현재값, 인덱스 , 배열)
+    const [repeat, steRepeat] = useState(Array(5).fill(0).map((value,index)=> index + 1));
+  
+        
+    const log = (Event)=>{
+        const ev = Event.target.value;
+        console.log(ev);
+     
+    }
     
     return(
         <>
-            <label className="star_label" style={{backgroundColor: star1 <= star ? "red" : "black"}}><input className={"star_input"} type="checkbox" onClick={test} value={star1}/></label>
-            <label className="star_label" style={{backgroundColor: star2 <= star ? "red" : "black"}}><input className={"star_input"} type="checkbox" onClick={test} value={star2}/></label>
-            <label className="star_label" style={{backgroundColor: star3 <= star ? "red" : "black"}}><input className={"star_input"} type="checkbox" onClick={test} value={star3}/></label>
-            <label className="star_label" style={{backgroundColor: star4 <= star ? "red" : "black"}}><input className={"star_input"} type="checkbox" onClick={test} value={star4}/></label>
-            <label className="star_label" style={{backgroundColor: star5 <= star ? "red" : "black"}}><input className={"star_input"} type="checkbox" onClick={test} value={star5}/></label>
-            
-            
-            
-            
-            
+        {repeat.map((value,index)=>{
+            return(
+                <label key={index} className="rating_label">
+                    <input type="checkbox" className="rating_input" value={repeat[index]}
+                    onClick={log}/>
+                </label>
+            )
+        })}
+        
         </>
     )
 }
