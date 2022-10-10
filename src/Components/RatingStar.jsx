@@ -6,7 +6,17 @@ import styled from "styled-components"
 
 const Star = styled.span`
     cursor: pointer;
-    :hover: {color: red;}
+    :hover {color: grey;
+    font-size: 16.2px;
+    transition-duration: 0.5s;
+}
+`
+
+const Text = styled.div`
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+    margin-bottom: 100px;
 `
 export default function RatingStar() {
     const [icons, setIcon] = useState(regularStar)
@@ -15,36 +25,36 @@ export default function RatingStar() {
     const [icons4, setIcon4] = useState(regularStar)
     const [icons5, setIcon5] = useState(regularStar)
     const Font = [
-   <FontAwesomeIcon icon={icons} size='8x' onClick={() => {
+   <Star><FontAwesomeIcon icon={icons} size='8x' onClick={() => {
         setIcon(solidStar)
         setIcon2(regularStar)
         setIcon3(regularStar)
         setIcon4(regularStar)
-        setIcon5(regularStar)}}></FontAwesomeIcon>,
-    <FontAwesomeIcon icon={icons2} size='8x' onClick={() => {
+        setIcon5(regularStar)}}></FontAwesomeIcon></Star>,
+     <Star><FontAwesomeIcon icon={icons2} size='8x' onClick={() => {
         setIcon(solidStar)
         setIcon2(solidStar)
         setIcon3(regularStar)
         setIcon4(regularStar)
-        setIcon5(regularStar)}}></FontAwesomeIcon>,
-    <FontAwesomeIcon icon={icons3} size='8x' onClick={() => {
+        setIcon5(regularStar)}}></FontAwesomeIcon></Star>,
+     <Star><FontAwesomeIcon icon={icons3} size='8x' onClick={() => {
         setIcon(solidStar)
         setIcon2(solidStar)
         setIcon3(solidStar)
         setIcon4(regularStar)
-        setIcon5(regularStar)}}></FontAwesomeIcon>,
-    <FontAwesomeIcon icon={icons4} size='8x' onClick={() => {
+        setIcon5(regularStar)}}></FontAwesomeIcon></Star>,
+     <Star><FontAwesomeIcon icon={icons4} size='8x' onClick={() => {
         setIcon(solidStar)
         setIcon2(solidStar)
         setIcon3(solidStar)
         setIcon4(solidStar)
-        setIcon5(regularStar)}}></FontAwesomeIcon>,
-    <FontAwesomeIcon icon={icons5} size='8x' onClick={() => {
+        setIcon5(regularStar)}}></FontAwesomeIcon></Star>,
+     <Star><FontAwesomeIcon icon={icons5} size='8x' onClick={() => {
         setIcon(solidStar)
         setIcon2(solidStar)
         setIcon3(solidStar)
         setIcon4(solidStar)
-        setIcon5(solidStar)}}></FontAwesomeIcon>
+        setIcon5(solidStar)}}></FontAwesomeIcon></Star>
     ]
     
     //빈 별을 누르면 채워진 별로 바뀐다.
@@ -52,7 +62,8 @@ export default function RatingStar() {
 
     return(
     <>
-    <Star>{Font}</Star>
+    <Text>Rating Star</Text>
+    {Font}
     </>
     )
 }
