@@ -14,15 +14,27 @@ export default function RatingStar() {
     <FontAwesomeIcon icon={icons} size='8x' onClick={() => {
         setIcon(solidStar)}}></FontAwesomeIcon>,
     <FontAwesomeIcon icon={icons2} size='8x' onClick={() => {
+        setIcon(solidStar)
         setIcon2(solidStar)}}></FontAwesomeIcon>,
     <FontAwesomeIcon icon={icons3} size='8x' onClick={() => {
+        setIcon(solidStar)
+        setIcon2(solidStar)
         setIcon3(solidStar)}}></FontAwesomeIcon>,
     <FontAwesomeIcon icon={icons4} size='8x' onClick={() => {
+        setIcon(solidStar)
+        setIcon2(solidStar)
+        setIcon3(solidStar)
         setIcon4(solidStar)}}></FontAwesomeIcon>,
     <FontAwesomeIcon icon={icons5} size='8x' onClick={() => {
+        setIcon(solidStar)
+        setIcon2(solidStar)
+        setIcon3(solidStar)
+        setIcon4(solidStar)
         setIcon5(solidStar)}}></FontAwesomeIcon>
     ]
     
+    //빈 별을 누르면 채워진 별로 바뀐다.
+    //두번째 이상의 별부터 누르게 될 때 만약, 앞에 별이 채워지지 않아있다면 앞에별까지 색을 채운다.
 
     return(
     <>
