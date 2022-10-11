@@ -36,9 +36,6 @@ function Rating(){
     const [currentValue, setCurrentValue] = useState(0);
     // 오버시의 별의 값을 저장
     const [hoverValue, setHoveValue] = useState(0);
-
-    // 반별의 값을저장
-    const [half, setHalf] = useState(0);
         
     const log = (Event)=>{
         // console.log("Click 콘솔:",Event.target.value)
@@ -46,9 +43,13 @@ function Rating(){
         setCurrentValue(activate1);
         // console.log("Click의 변한값:",currentValue)
     }
-    
+
+ 
     return(
         <>
+        <div className="rating_text">
+            <p>{currentValue}</p>
+        </div>
         <div className="rating">
         {repeat.map((value,index)=>{
             return(

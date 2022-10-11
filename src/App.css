@@ -153,6 +153,14 @@ body *{
 /******************************** Rating css********************************/
 
 
+.rating_text{
+    position: absolute;
+    border: 1px solid black;
+    top: 40%;
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: 5px 5px 5px 5px black;
+}
 
 /* https://css-tricks.com/using-box-shadows-and-clip-path-together/ 
 clip-path box-shadow 문제에 관하여*/
