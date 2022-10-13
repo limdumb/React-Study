@@ -1,8 +1,9 @@
 import './App.css';
 import Home from './MainPage/Home'
 import Assignment from './MainPage/Assignment'
-import Reting from './MainPage/RetingPage'
+import RetingPage from './MainPage/RetingPage'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import TabPage from './MainPage/TabPage'
 
 function App() {
   return(
@@ -10,7 +11,8 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/assignment' element={<Assignment/>}/>
-          <Route path='/reting' element={<Reting/>}/>
+          <Route path='/reting' element={<RetingPage/>}/>
+          <Route path='/reting' element={<TabPage/>}/>
         </Routes>
     </BrowserRouter>
   )
