@@ -17,6 +17,7 @@ function Header(){
                                     <li><Link to="Toggle/">Toggle</Link></li>
                                     <li><Link to="OnOff/">OnOff</Link></li>
                                     <li><Link to="Rating/">Rating</Link></li>
+                                    <li><Link to="Tap/">Tap</Link></li>
                                 </ol>
                             </div>
                         </li>

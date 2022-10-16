@@ -3,6 +3,7 @@ import Log from "./nav_Button/Log";
 import Toggle from "./nav_Button/Toggle";
 import OnOff from "./nav_Button/OnOff";
 import Rating from "./nav_Button/Rating";
+import Tap from "./nav_Button/Tap";
 
 
 function Main(){
@@ -16,6 +17,7 @@ function Main(){
                 <Route path="Toggle/" element={<Toggle/>}/>
                 <Route path="OnOff/" element={<OnOff/>}/>
                 <Route path="Rating/" element={<Rating/>}/>
+                <Route path="Tap/" element={<Tap/>}/>
             </Routes>
         </div>
         </>
