@@ -3,8 +3,9 @@ import NewRating from "./NewRating"
 import styled from "styled-components";
 
 const Tapimg =styled.img`
-    width: 250px;
-    height: 250px;
+    width: 100%;
+    height: 100%;
+    display: block;
 `
 
 function Step1(){

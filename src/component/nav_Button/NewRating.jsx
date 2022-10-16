@@ -1,5 +1,3 @@
-
-
 function NewRating(){
 
     return(

@@ -38,7 +38,7 @@ body *{
 .ibx{
     /* 컴포넌트영역 공통 속성 */
     text-align: center;
-    width: 900px;
+    width: 1200px;
 }
 
 
@@ -221,13 +221,13 @@ clip-path box-shadow 문제에 관하여*/
 .title_dot_li{
     /* title 자식 li */
     outline: 1px solid green;
-    padding: 50px;
+    padding: 150px;
 }
 
 .tap_content{
     /* 내용라인 부모 */
     outline: 1px solid blue;
-    width: 500px;
+    width: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
