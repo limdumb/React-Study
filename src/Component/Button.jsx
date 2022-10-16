@@ -27,6 +27,9 @@ export default function ClickButton() {
       <Link to="/rating">
         <button>Counting stars! 밤하늘의 퍼얼~ </button>
       </Link>
+      <Link to="/Tab">
+        <button>Tab </button>
+      </Link>
     </div>
   );
 }
