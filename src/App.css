@@ -249,3 +249,24 @@ clip-path box-shadow 문제에 관하여*/
     justify-content: space-between;
 }
 
+/******************************** step2 css********************************/
+
+.step2 *{
+    outline: 1px solid red;
+}
+
+.step2{
+    position: relative;
+}
+
+.step2_dot_new{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+}
+/******************************** step3 css********************************/
