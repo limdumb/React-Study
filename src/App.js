@@ -3,6 +3,7 @@ import './App.css';
 import Buttons from './Components/Buttons';
 import Rating from './Pages/Rating';
 import Toggle from './Pages/Toggle';
+import Tab from './Pages/Tab';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Route path="/" element={<Buttons />} />
       <Route path="/toggle" element={<Toggle />} />
       <Route path="/rating" element={<Rating />} />
+      <Route path="/tab" element={<Tab />} />
     </Routes>
     </BrowserRouter>
   );
