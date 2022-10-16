@@ -201,11 +201,35 @@ clip-path box-shadow 문제에 관하여*/
 /******************************** Tap css********************************/
 
 
-#layout{
+#tap{
+    /* 최상위 부모 */
     outline: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
 }
 
-.Tap_title{
+.tap_title{
+    /* 탭라인 부모  */
     outline: 1px solid blue;
     display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.title_dot_li{
+    /* title 자식 li */
+    outline: 1px solid green;
+    padding: 50px;
+}
+
+.tap_content{
+    /* 내용라인 부모 */
+    outline: 1px solid blue;
+}
+
+.content_layout{
+    /* content 자식 div */
+    width: 500px;
 }
