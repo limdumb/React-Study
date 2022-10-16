@@ -196,3 +196,16 @@ clip-path box-shadow 문제에 관하여*/
     height: 100%;
 }
 
+
+
+/******************************** Tap css********************************/
+
+
+#layout{
+    outline: 1px solid red;
+}
+
+.Tap_title{
+    outline: 1px solid blue;
+    display: flex;
+}
