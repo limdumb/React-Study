@@ -1,5 +1,7 @@
-
-
+import {useState} from "react"
+import Step1 from "./Step1"
+import Step2 from "./Step2"
+import Step3 from "./Step3"
 /*
 [목적구분]
 1. 3개의 탭버튼을 구현한다.
@@ -21,19 +23,41 @@ step3 : Switch 와 동일하게 기능설명을 하고 Switch를 클릭시 alert
 
 
 function Tap(){
+    const [hide, setHide] = useState(0);
+
     return(
         
         <div id="tap">
             <ul className="tap_title">
-                <li className="title_dot_li"><span>step1</span></li>
-                <li className="title_dot_li"><span>step1</span></li>
-                <li className="title_dot_li"><span>step1</span></li>
+                <li className="title_dot_li">
+                    <span onClick={()=>{setHide(1)}}>step1</span>
+                </li>
+                <li className="title_dot_li">
+                    <span onClick={()=>{setHide(2)}}>step2</span>
+                </li>
+                <li className="title_dot_li">
+                    <span onClick={()=>{setHide(3)}}>step3</span>
+                </li>
             </ul>
             <div className="tap_content">
-                <div className="content_layout">
+                <div className="content_layout" hidden={hide !== 0}>
+                    <span>탭 메뉴를 클릭하세요!</span>
+                </div>
+
+                <div className="content_layout" hidden={hide !== 1}>
+                    <Step1/>
+                </div>
+
+                <div className="content_layout" hidden={hide !== 2}>
+                    <Step2/>
+                </div>
+
+                <div className="content_layout" hidden={hide !== 3}>
+                    <Step3/>
                 </div>
             </div>
         </div>
+        
 
     )
 }

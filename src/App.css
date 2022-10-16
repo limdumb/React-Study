@@ -227,9 +227,13 @@ clip-path box-shadow 문제에 관하여*/
 .tap_content{
     /* 내용라인 부모 */
     outline: 1px solid blue;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .content_layout{
     /* content 자식 div */
-    width: 500px;
+    
 }
