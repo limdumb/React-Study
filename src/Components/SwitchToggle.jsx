@@ -12,14 +12,24 @@ const StyleDiv = styled.div `
   align-items: center;
   flex-direction: column;
 `
+const 소감 = "이번 스터디 모두 고생 많았습니다 :) 부족한 스터디장 이라서 많이 도움이 되었을지는 모르겠지만 모두 잘 따라와 주셔서 너무 기뻐요! 다음 시즌2도 더 좋은 컨텐츠로 찾아뵙겠습니다!🌈"
 
 export default function SwitchToggle() {
 
   const [toggle ,setToggle] = useState(false)
 
-  const switchToggle = (() => {
+  const onOffAlert = async () => {
     setToggle(!toggle)
-  })
+    let alertContent = new Promise((resolve) => {
+      if(!toggle){
+        setTimeout(() => resolve(소감),3000)
+      }
+    })
+    
+    let result = await alertContent
+
+    alert(result)
+  }
 
   console.log(toggle)
   return (
@@ -31,7 +41,7 @@ export default function SwitchToggle() {
         borderRadius: 50,
         transition: "all",
         cursor:"pointer"
-      }}onClick={switchToggle}>
+      }}onClick={onOffAlert}>
 
 
       <span style={{
