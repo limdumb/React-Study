@@ -1,4 +1,4 @@
-import Reting from "./Reting";
+import Rating from "./Rating";
 import SwitchToggle from "./SwitchToggle";
 import Modal from "./Modal";
 import { useState } from "react";
@@ -20,7 +20,7 @@ export default function ContentTab() {
           Reting
         </button>
       ),
-      tabContetn: <Reting />,
+      tabContetn: <Rating />,
     },
     {
       tabTitle: (

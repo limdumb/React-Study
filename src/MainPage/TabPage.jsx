@@ -8,3 +8,23 @@ export default function TabPage() {
     </>
   )
 }
+
+//const renderComponents = [
+// {
+//        tabTitle: (<button>Reting<button/>),
+//        tabContent: (<Reting/>) 
+// }
+// {
+//        tabTitle: (<button>Modal<button/>),
+//        tabContent: (<Modal/>) 
+// }
+// {
+//        tabTitle: (<button>Switch<button/>),
+//        tabContent: (<Switch/>) 
+// }
+// ]
+//
+// renderComponents.map((el) => {
+      // el.tabTitle
+// })
+//
