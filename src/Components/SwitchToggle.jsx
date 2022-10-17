@@ -14,50 +14,12 @@ const StyleDiv = styled.div `
 `
 
 export default function SwitchToggle() {
-  const [toggle, setToggle] = useState(false);
-
-  async function onOffAlert() {
-    setToggle(!toggle)
-    let thirdAlert = new Promise ((resolve, reject) => {
-      if(!toggle) {
-        setTimeout(() => resolve("그 코딩실력에 잠이와? TIL은 썼니?"),2000)
-      }
-    });
-    let result = await thirdAlert;
-    alert(result);
-    console.log(setTimeout)
-  };
-  
-
 
 
   return (
+
     <StyleDiv>
-      <h1>My Contents Switch</h1>
-      <div style={{
-        backgroundColor: toggle ? '#2196F3' : '#AEAEAE',
-        width: 70,
-        height: 30,
-        borderRadius: 70,
-        display: "flex",
-        alignItems: "center",
-        transition: "all",
-        cursor: 'grab',
-      }}onClick={onOffAlert}>
-
-        <span style={{
-          backgroundColor: "white",
-          width: 27,
-          height: 27,
-          display: "inline-block",
-          borderRadius: 30,
-          marginLeft: 3,
-          marginRight: 1,
-          transition: "transform 300ms ease-out",
-          transform: toggle ? "translate(37px, 0px)" : "translate(0px, 0px)"
-        }}></span>
-
-      </div>
     </StyleDiv>
+
   );
 }
