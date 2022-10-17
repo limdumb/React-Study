@@ -6,8 +6,9 @@ function Step2(){
 
     return(
         <div className="step2">
-            <button onClick={()=> SetNewPage(!newpage)}>클릭!</button>
+            <button onClick={()=> SetNewPage(!newpage)} style={{fontSize : "50px"}}>클릭!</button>
             <div className="step2_dot_new" style={{display : newpage ? "block":"none"}}>
+                <button onClick={()=> SetNewPage(false) }>X</button>
             </div>
         </div>
     )

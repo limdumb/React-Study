@@ -224,6 +224,14 @@ clip-path box-shadow 문제에 관하여*/
     padding: 150px;
 }
 
+.title_dot_li > span{
+    cursor: pointer;
+    background-color: red;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
 .tap_content{
     /* 내용라인 부모 */
     outline: 1px solid blue;
@@ -255,18 +263,16 @@ clip-path box-shadow 문제에 관하여*/
     outline: 1px solid red;
 }
 
-.step2{
-    position: relative;
-}
-
 .step2_dot_new{
     position: absolute;
-    top: 20px;
+    top: 0;
     left: 0;
-    bottom: 0;
+    bottom:0;
     right: 0;
-    width: 200px;
-    height: 200px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.504);
+}
+
+.step2_dot_new button{
+    font-size: 100px;
 }
 /******************************** step3 css********************************/
