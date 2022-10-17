@@ -24,7 +24,7 @@ export default function Modal() {
         justifyContent: "center",
       }}
       >
-      <button style={{
+      <button className="modal__Component__Button" style={{
         width: 120,
         height: 120,
         border: "none",
@@ -45,7 +45,7 @@ export default function Modal() {
             <h1 style={{ color: "white" }}>⭐️ 모두들 고생 하셨습니다 ⭐️ </h1>
             <h2 style={{ color: "white" }}>🎃 되돌아 가고 싶다면 밑에 유령을 눌러주세요 🎃</h2>
             </div>
-            <button
+            <button className="gost__Button"
               style={{
                 display: "inline",
                 background: "none",
