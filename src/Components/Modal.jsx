@@ -33,8 +33,8 @@ export default function Modal() {
         color: 'white',
         fontSize: 30,
         fontWeight: "bold",
-        marginTop: 40,
-        cursor:"pointer"
+        cursor:"pointer",
+        marginTop:50
       }} onClick={togglePopup}>Click Me!</button>
       <div
         className={showModal ? "backDisplay" : ""}
