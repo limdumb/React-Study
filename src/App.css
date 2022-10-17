@@ -10,3 +10,10 @@
 h1 {
   color: hwb(220 74% 24% / 0.9);
 }
+
+.backDisplay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
