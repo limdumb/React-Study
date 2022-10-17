@@ -1,6 +1,6 @@
 import Reting from "./Reting"
 import SwitchToggle from "./SwitchToggle"
-
+import Modal from "./Modal"
 
 export default function ContentTab() {
   
