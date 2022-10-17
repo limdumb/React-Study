@@ -1,8 +1,5 @@
-import React from "react";
-import Switch from "../MainPage/switch";
-
 function Step2() {
-  return <Switch />;
+  return;
 }
 
 export default Step2;

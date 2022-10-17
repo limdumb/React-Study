@@ -1,10 +1,8 @@
+import React from "react";
+import Switch from "../MainPage/switch";
+
 function Step3() {
-  return (
-    <div>
-      <h1>제목</h1>
-      <p>Switch내용</p>
-    </div>
-  );
+  return <Switch />;
 }
 
 export default Step3;
