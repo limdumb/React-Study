@@ -18,7 +18,9 @@ function DarkMode() {
   const [isDarkModeOn, setDarkMode] = useState(false);
   return (
     <div className={isDarkModeOn ? "Container dark" : "Container light"}>
-      <div className={isDarkModeOn ? "dark" : "light"}>다크다크다크!</div>
+      <div className={isDarkModeOn ? "dark" : "light"}>
+        나도 맥북 갖고싶다!!
+      </div>
       <label className="switch">
         <input
           type="checkbox"
