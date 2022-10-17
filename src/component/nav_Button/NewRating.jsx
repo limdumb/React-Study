@@ -11,7 +11,7 @@ const Circle = styled.div`
 `
 
 function NewRating(){
-    const [val, setVal] = useState(Array(5).fill(0).map((value, index)=> index + 1 ))
+    const val = Array(5).fill(0).map((value, index)=> index + 1 )
     const [save, setSvae] = useState(0)
 
     return(
