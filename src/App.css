@@ -17,3 +17,99 @@ h1 {
   height: 100%;
   background-color: rgba(0,0,0,0.4);
 }
+
+.modalInner {
+  background-image: url("https://mblogthumb-phinf.pstatic.net/MjAxOTA2MThfMjgw/MDAxNTYwODQxNjUzNzI2.qP2O9P0EbXh-2eXpysArSonJrin9UTbsdm7MkPrMF1Ag.jfnA7IaTamg0E5AdWJPJjPIfkblIADgGTTmpeaKwYqEg.GIF.otozio/resource(1).gif?type=w800");
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  margin: 300px;
+  margin-left: calc(50% - 250px);
+  margin-top: calc(50vh - 300px);
+}
+
+.tab__Container{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #B1B2FF;
+  padding: 0px;
+  margin: 0px;
+  background-color: #D6E5FA;
+}
+
+.tab__Container > button {
+  margin-top: 10px;
+  font-size: 25px;
+  background-color: white;
+  border-right: 2px solid #B1B2FF;
+  border-left: 2px solid #B1B2FF;
+  border-top: 2px solid #B1B2FF;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 7px;
+  border-bottom: none;
+  position: relative;
+  top: 2px;
+}
+
+.Container {
+  height: 100vh;
+}
+
+.reting__Tab {
+  margin-left: 10px;
+}
+
+.switch__Tab {
+  margin-right: 10px;
+
+}
+
+.befor__RetingTab {
+  margin-left: 10px;
+}
+
+.befor__SwitchTab{
+  margin-right: 10px;
+}
+
+.befor__RetingTab:hover {
+  background-color: #FDEBF7;
+  transition: 500ms;
+  color: white;
+  transform: scale(1.1);
+}
+
+.befor__ModalTab:hover {
+  background-color: #091353;
+  transition: 500ms;
+  color: white;
+  transform: scale(1.1);
+}
+
+.befor__SwitchTab:hover {
+  background-color: #FDEBF7;
+  transition: 500ms;
+  color: white;
+  transform: scale(1.1);
+}
+
+.befor__Tab:hover {
+  background-color: #AFB4FF;
+  color: white;
+}
+
+.gost__Button:hover {
+  transition: all ease 1s;
+  transform: rotate( 720deg );
+}
+
+.modal__Component__Button:hover {
+  transition: all ease 900ms;
+  transform: scale( 1.5 )
+}
