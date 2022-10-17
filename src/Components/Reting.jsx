@@ -32,27 +32,5 @@ const EmptyImage = styled.img `
 `
 
 export default function Reting() {
-  const [count, setCount] = useState(0)
 
-  const retingItem = []
-
-  for(let i=1; i <= count; i++) {
-    retingItem.push(<StarImage src={FullStar} onClick={() => {setCount(i)}}/>)
-  }
-
-  for(let i=1; i <= 5-count; i++) {
-    retingItem.push(<EmptyImage src={EmptyStar} onClick={() => {setCount(count+i)}}/>)
-  }
-
-  console.log(count)
-
-
-  return (
-    <div style={{
-      borderRadius:10,
-      backgroundColor : 'rgba(255, 255, 255, 0.5)',
-    }}>
-      {retingItem}
-    </div>
-  );
 }
