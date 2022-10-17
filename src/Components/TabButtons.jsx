@@ -21,16 +21,16 @@ const TabButtons = () => {
         setTab(index)
     }
     const tabContents = [{
-        title: <TabStyled onClick={TabHandler[0]}>Rating</TabStyled>,
+        title: <TabStyled onClick={() => TabHandler(0)}>Rating</TabStyled>,
         content: <RatingStar/>
     },
 
         {
-        title: <TabStyled onClick={TabHandler[1]}>Modal</TabStyled>,
+        title: <TabStyled onClick={() => TabHandler(1)}>Modal</TabStyled>,
         content: <Modal />
     },
         {
-        title: <TabStyled onClick={TabHandler[2]}>Switch</TabStyled>,
+        title: <TabStyled onClick={() => TabHandler(2)}>Switch</TabStyled>,
         content: <SwitchToggle />
     }]
     return (
