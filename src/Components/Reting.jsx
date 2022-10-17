@@ -1,8 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
-import FullStar from '../Image/fullstar.png'
-import EmptyStar from '../Image/emptystar.png'
-
+import FullStar from "../Image/fullstar.png";
+import EmptyStar from "../Image/emptystar.png";
 
 // 1. 점수를 표현할 수 있는걸 만들어보기
 // 1-1 . 점수를 담을수 있는 count 점수 , 클릭할때 해당 숫자로 상태값이 변경 될 수 있게 설정
@@ -17,36 +16,49 @@ import EmptyStar from '../Image/emptystar.png'
 // 3-1 . 빈별을 클릭 했을때 5에서 검은별의 값을 뺀 만큼 랜더링 되게 설정
 // 3-2 . 반복문으로 동일하게 retingItem 값을 넣어주면 될것같음
 
-
-const StarImage = styled.img `
+const StarImage = styled.img`
   width: 70px;
   height: 70px;
   cursor: pointer;
-`
+  margin-top: 50px;
+`;
 
-const EmptyImage = styled.img `
+const EmptyImage = styled.img`
   width: 66px;
   height: 67px;
-  margin-bottom: 1px;
   cursor: pointer;
-`
+  margin-top: 50px;
+`;
 
 export default function Reting() {
-  const [score, setScore] = useState(0)
+  const [score, setScore] = useState(3);
 
-  const starItem = []
+  const starItem = [];
 
-  for(let i=1; i <= score; i++) {
-    starItem.push(<StarImage src={FullStar} onClick={() => {setScore(i)}}/>)
+  for (let i = 1; i <= score; i++) {
+    starItem.push(
+      <StarImage
+        src={FullStar}
+        onClick={() => {
+          setScore(i);
+        }}
+      />
+    );
   }
 
-  for(let i=1; i<= 5-score; i++) {
-    starItem.push(<EmptyImage src={EmptyStar} onClick={() => setScore(score+i)}/>)
+  for (let i = 1; i <= 5 - score; i++) {
+    starItem.push(
+      <EmptyImage src={EmptyStar} onClick={() => setScore(score + i)} />
+    );
   }
 
   return(
-    <>
+    <div style={{
+      display:"flex",
+      alignItems:"center",
+      justifyContent:"center"
+    }}>
       {starItem}
-    </>
-  )
+    </div>
+  );
 }
