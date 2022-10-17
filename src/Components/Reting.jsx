@@ -32,5 +32,21 @@ const EmptyImage = styled.img `
 `
 
 export default function Reting() {
+  const [score, setScore] = useState(0)
 
+  const starItem = []
+
+  for(let i=1; i <= score; i++) {
+    starItem.push(<StarImage src={FullStar} onClick={() => {setScore(i)}}/>)
+  }
+
+  for(let i=1; i<= 5-score; i++) {
+    starItem.push(<EmptyImage src={EmptyStar} onClick={() => setScore(score+i)}/>)
+  }
+
+  return(
+    <>
+      {starItem}
+    </>
+  )
 }
