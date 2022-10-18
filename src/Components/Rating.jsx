@@ -56,9 +56,16 @@ export default function Rating() {
     <div style={{
       display:"flex",
       alignItems:"center",
-      justifyContent:"center"
+      justifyContent:"center",
+      flexDirection:"column",
+      backgroundImage:"url(https://i.pinimg.com/222x/9b/72/4a/9b724a9a57feda49832adc8ea88d157a.jpg)",
+      backgroundSize:"50%",
+      height:"100%"
     }}>
+      <h1 style={{ color:"#150050"}}>🌟 Reting Star Components 🌟</h1>
       {starItem}
+      <h3>해당 컴포넌트는 클릭한 별에 따라서 점수를 표기하는 컴포넌트 입니다</h3>
+      <h3>빈별을 Click시 useState 값이 변경되고 해당 변경값에 따라 반복문으로 별을 값에맞춰 Render 합니다</h3>
     </div>
   );
 }
