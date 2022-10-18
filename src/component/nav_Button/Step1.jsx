@@ -14,12 +14,9 @@ function Step1(){
         <div className="step1">
             <h1>제목</h1>
             <NewRating/>
-            <Tapimg src={`${process.env.PUBLIC_URL}/photo/test1.jpg`} alt="imgs"/>
-            <p>Rating내용</p>
-            <ul className="step1_dot_btns">
-                <li>⬅️왼쪽</li>
-                <li>오른쪽➡️</li>
-            </ul>
+            <Tapimg src={`${process.env.PUBLIC_URL}/photo/test2.png`} alt="imgs"/>
+            <p>해당원을 클릭했을시에 각원이 가진 value에 값을 useState에 저장하여
+                 그 값을 만들어진 Array의 값과 비교하여 해당value 값까지 색상을채운다!</p>
         </div>
     )
 }

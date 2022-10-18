@@ -252,27 +252,35 @@ clip-path box-shadow 문제에 관하여*/
     /* outline: 1px solid red; */
 }
 
-.step1_dot_btns{
+/* .step1_dot_btns{
     display: flex;
     justify-content: space-between;
-}
+} */
 
 /******************************** step2 css********************************/
 
 .step2 *{
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 .step2_dot_new{
     position: absolute;
-    top: 0;
-    left: 0;
-    bottom:0;
-    right: 0;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
     background-color: rgba(0, 0, 0, 0.504);
 }
 
-.step2_dot_new button{
-    font-size: 100px;
+.step2_dot_new > button{
+    position: absolute;
+    font-size: 50px;
+    top: 50px;
+    right: 50px;
+}
+
+.step2_dot_new > p{
+    color: white;
+    font-size: 50px;
+
 }
 /******************************** step3 css********************************/
