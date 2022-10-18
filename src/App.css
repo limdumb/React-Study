@@ -246,22 +246,8 @@ clip-path box-shadow 문제에 관하여*/
     
 }
 
-/******************************** step1 css********************************/
-
-.step1 *{
-    /* outline: 1px solid red; */
-}
-
-/* .step1_dot_btns{
-    display: flex;
-    justify-content: space-between;
-} */
 
 /******************************** step2 css********************************/
-
-.step2 *{
-    /* outline: 1px solid red; */
-}
 
 .step2_dot_new{
     position: absolute;
