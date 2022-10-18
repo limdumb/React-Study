@@ -1,3 +1,5 @@
+import { useState } from "react";
+import "./Modal.css"
 
 //total: TAB2버튼을 눌렀을 때 새로운 팝업창을 나타낸다.
 //detail 1. 팝업창의 틀을 구현한다.
@@ -8,8 +10,28 @@
 
 
 const Modal = () => {
-    return(
-
+    const [pop, setPop] = useState(false);
+    const pushPop = () => {
+        return setPop(!pop)
+    }
+    return (
+        <div>
+        {pop ? (
+        <body className={pop ? "pop_body" : ""}>
+            <div className={pop ? "pop_container" : ""}>
+                <div className={pop ? "backOn" : ""}><button style={{
+                    height: "80px",
+                    width: "80px"
+                }}onClick={pushPop}>Close</button>
+                </div>
+                
+            </div>
+        </body>) : null}
+        <button style={{
+            height: "80px",
+            width: "80px"
+        }}className={pop ? "pop_btn" : ""} onClick={pushPop}>Click</button>
+        </div>
     )
 }
 

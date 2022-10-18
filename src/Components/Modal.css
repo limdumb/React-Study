@@ -1,0 +1,29 @@
+.pop_container {
+    display: flex;
+    justify-content: center;
+    border: 1px solid green;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.backOn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dotted blue;
+    height: 25em;
+    width: 25em;
+    position: absolute;
+    background-color: white;
+    margin-top: 15%;
+}
+
+.pop_btn {
+    display: none;
+}
+
+
+.pop_body {
+    background-color: rgba(0, 0, 0, 0.455);
+}
