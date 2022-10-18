@@ -26,7 +26,9 @@ function DarkMode() {
           type="checkbox"
           onChange={() => {
             setTimeout(() => {
-              alert("그 코딩실력에 잠이와? TIL은 썼니?");
+              alert(
+                "이번 1달간 컴포넌트 구현 스터디로 인하여 많이 성장한 것 같습니다. 많은 도움을 받게되어 감사하고 이제 새로운 프로젝트 시작함에 있어서도 더 화이팅해서 좋은 결과물을 만들어봐요!"
+              );
             }, 3000);
 
             setDarkMode(isDarkModeOn ? false : true);
