@@ -11,6 +11,9 @@ const StyleDiv = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-image: url("https://d3kxs6kpbh59hp.cloudfront.net/community/COMMUNITY/a853ef6acc4745bda06ce92b2ed27906/066cea7daa784300aa9ee733246020d1_1590672129.gif");
+  background-size: cover;
+  height: 100%;
 `;
 const 소감 =
   "이번 스터디 모두 고생 많았습니다 :) 부족한 스터디장 이라서 많이 도움이 되었을지는 모르겠지만 모두 잘 따라와 주셔서 너무 기뻐요! 다음 시즌2도 더 좋은 컨텐츠로 찾아뵙겠습니다!🌈";
@@ -34,6 +37,9 @@ export default function SwitchToggle() {
   console.log(toggle);
   return (
     <StyleDiv>
+      <h1 style={{
+        color: "purple"
+      }}>나의 마음을 UN Lock 🗝</h1>
       <div
         style={{
           backgroundColor: toggle ? "#1f88de" : "#AEAEAE",
@@ -61,6 +67,12 @@ export default function SwitchToggle() {
           }}
         />
       </div>
+      <h2 style={{
+        color:"#2C3333"
+      }}>Swith Component는 해당 토글을 클릭으로 ON/OFF기능을 둘다 하는 컴포넌트 입니다</h2>
+      <h3 style={{
+        color:"#2C3333"
+      }}>그리고 On이 되면 3초뒤에 Alert이 뜨는 비동기 함수를 적용 하였습니다.</h3>
     </StyleDiv>
   );
 }
