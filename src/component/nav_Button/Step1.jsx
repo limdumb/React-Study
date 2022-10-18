@@ -12,7 +12,7 @@ function Step1(){
 
     return(
         <div className="step1">
-            <h1>제목</h1>
+            <h1>Rating의 기본!</h1>
             <NewRating/>
             <Tapimg src={`${process.env.PUBLIC_URL}/photo/test2.png`} alt="imgs"/>
             <p>해당원을 클릭했을시에 각원이 가진 value에 값을 useState에 저장하여
