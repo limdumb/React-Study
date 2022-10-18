@@ -243,7 +243,7 @@ clip-path box-shadow 문제에 관하여*/
 
 .content_layout{
     /* content 자식 div */
-    
+    transform: translate();
 }
 
 
@@ -269,3 +269,10 @@ clip-path box-shadow 문제에 관하여*/
     font-size: 50px;
 }
 /******************************** step3 css********************************/
+
+.event1 {
+    transform: translate(0px,-12.5px);
+}
+.event2 {
+    transform: translate(350px,-12.5px);
+}
