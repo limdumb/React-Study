@@ -36,19 +36,19 @@ function Tap(){
                 </li>
             </ul>
             <div className="tap_content">
-                <div className="content_layout" hidden={hide !== 0}>
+                <div hidden={hide !== 0}>
                     <span>탭 메뉴를 클릭하세요!</span>
                 </div>
 
-                <div className="content_layout" hidden={hide !== 1}>
+                <div hidden={hide !== 1}>
                     <Step1/>
                 </div>
 
-                <div className="content_layout" hidden={hide !== 2}>
+                <div hidden={hide !== 2}>
                     <Step2/>
                 </div>
 
-                <div className="content_layout" hidden={hide !== 3}>
+                <div hidden={hide !== 3}>
                     <Step3/>
                 </div>
             </div>

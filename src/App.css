@@ -21,10 +21,6 @@ body{
     background-color: darkgray;
 }
 
-body *{
-     /* 임시공사중 */
-    /* outline: 1px solid red; */
-}
 
 /********************************공통css********************************/
 .App{
@@ -120,7 +116,6 @@ body *{
 /******************************** On/Off css********************************/
 .OnOff_div{
     position: relative;
-    /* border : 0px solid black; */
     box-shadow: 0px 5px 5px 0px black;
     width : 90%;
     height : 50px;
@@ -203,7 +198,6 @@ clip-path box-shadow 문제에 관하여*/
 
 #tap{
     /* 최상위 부모 */
-    outline: 1px solid red;
     display: flex;
     flex-direction: row;
     padding: 10px;
@@ -211,22 +205,19 @@ clip-path box-shadow 문제에 관하여*/
 
 .tap_title{
     /* 탭라인 부모  */
-    outline: 1px solid blue;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    padding: 10px;
+    padding: 100px 10px;
 }
 
 .title_dot_li{
     /* title 자식 li */
-    outline: 1px solid green;
     padding: 150px;
 }
 
 .title_dot_li > span{
     cursor: pointer;
-    background-color: red;
     font-size: 20px;
     font-weight: bold;
     
@@ -234,17 +225,12 @@ clip-path box-shadow 문제에 관하여*/
 
 .tap_content{
     /* 내용라인 부모 */
-    outline: 1px solid blue;
     width: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.content_layout{
-    /* content 자식 div */
-    transform: translate();
-}
 
 
 /******************************** step2 css********************************/

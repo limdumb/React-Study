@@ -2,7 +2,7 @@ import {useState} from "react"
 
 function Step2(){
     const [newpage, SetNewPage] = useState(false)
-    // console.log("newpage:",newpage)
+    
 
     return(
         <div className="step2">
