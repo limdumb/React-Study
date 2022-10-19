@@ -18,10 +18,6 @@ function App(){
                 <Main/>
                 <Footer/>
             </div>
-            <Routes>
-                {/* <Route path="*" element={<Main/>}/> */}
-                {/* 임시보류 */}
-            </Routes>
         </BrowserRouter>
     )
 }
