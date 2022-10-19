@@ -272,7 +272,9 @@ clip-path box-shadow 문제에 관하여*/
 
 .event1 {
     transform: translate(0px,-12.5px);
+    transition: 1s;
 }
 .event2 {
     transform: translate(350px,-12.5px);
+    transition: 1s;
 }
