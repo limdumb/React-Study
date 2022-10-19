@@ -21,6 +21,10 @@ body{
     background-color: darkgray;
 }
 
+body *{
+    /* outline: 1px solid red; */
+}
+
 
 /********************************공통css********************************/
 .App{
@@ -213,7 +217,11 @@ clip-path box-shadow 문제에 관하여*/
 
 .title_dot_li{
     /* title 자식 li */
-    padding: 150px;
+    padding: 150px 100px;
+}
+
+.title_dot_li > span{
+    white-space: nowrap;
 }
 
 .title_dot_li > span{
@@ -229,6 +237,7 @@ clip-path box-shadow 문제에 관하여*/
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 

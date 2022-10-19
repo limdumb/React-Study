@@ -9,7 +9,8 @@ function Step2(){
             <button onClick={()=> SetNewPage(!newpage)} style={{fontSize : "50px"}}>클릭!</button>
             <div className="step2_dot_new" style={{display : newpage ? "block":"none"}}>
                 <button onClick={()=> SetNewPage(false) }>X</button>
-                <p>테스트용</p>
+                <p>팝업창</p>
+                <p>“얄리 얄리 얄라셩 얄라리 얄라”</p>
             </div>
         </div>
     )

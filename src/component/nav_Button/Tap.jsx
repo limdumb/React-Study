@@ -26,13 +26,13 @@ function Tap(){
         <div id="tap">
             <ul className="tap_title">
                 <li className="title_dot_li">
-                    <span onClick={()=>{setHide(1)}}>step1</span>
+                    <span onClick={()=>{setHide(1)}}>Rating 탭</span>
                 </li>
                 <li className="title_dot_li">
-                    <span onClick={()=>{setHide(2)}}>step2</span>
+                    <span onClick={()=>{setHide(2)}}>pop-up 탭</span>
                 </li>
                 <li className="title_dot_li">
-                    <span onClick={()=>{setHide(3)}}>step3</span>
+                    <span onClick={()=>{setHide(3)}}>toggle 탭</span>
                 </li>
             </ul>
             <div className="tap_content">
