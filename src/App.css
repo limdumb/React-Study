@@ -2,37 +2,115 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Switch__Div{
+  height: 100vh;
+  background-image: url('https://mblogthumb-phinf.pstatic.net/MjAxNzA4MjFfMjA5/MDAxNTAzMjUyMDc1OTg4.GyYZe_c2MuOtei315PxWfVyVKnc6lRYE4_an7CnkMFYg.7HNmcSUWoQHoYQxLttCCxxwA6LJrzdhTh31NDXP6CkIg.GIF.btskook91/tumblr_oaj3l4xCUg1teycfyo1_540.gif?type=w2');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  color: hwb(220 74% 24% / 0.9);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.backDisplay {
+  position: absolute;
+  width: 100%;
+  height: 94%;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modalInner {
+  background-image: url("https://mblogthumb-phinf.pstatic.net/MjAxOTA2MThfMjgw/MDAxNTYwODQxNjUzNzI2.qP2O9P0EbXh-2eXpysArSonJrin9UTbsdm7MkPrMF1Ag.jfnA7IaTamg0E5AdWJPJjPIfkblIADgGTTmpeaKwYqEg.GIF.otozio/resource(1).gif?type=w800");
+  background-size: cover;
+  width: 500px;
+  height: 500px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  margin: 300px;
+  margin-left: calc(50% - 250px);
+  margin-top: calc(50vh - 300px);
+}
+
+.tab__Container{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #B1B2FF;
+  padding: 0px;
+  margin: 0px;
+  background-color: #D6E5FA;
+}
+
+.tab__Container > button {
+  margin-top: 10px;
+  font-size: 25px;
+  background-color: white;
+  border-right: 2px solid #B1B2FF;
+  border-left: 2px solid #B1B2FF;
+  border-top: 2px solid #B1B2FF;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 7px;
+  border-bottom: none;
+  position: relative;
+  top: 2px;
+  cursor: pointer;
+}
+
+.Container {
+  height: 100vh;
+}
+
+.reting__Tab {
+  margin-left: 10px;
+}
+
+.switch__Tab {
+  margin-right: 10px;
+
+}
+
+.befor__RetingTab {
+  margin-left: 10px;
+}
+
+.befor__SwitchTab{
+  margin-right: 10px;
+}
+
+.befor__RetingTab:hover {
+  background-color: #FDEBF7;
+  transition: 500ms;
+  color: white;
+  transform: scale(1.1);
+}
+
+.befor__ModalTab:hover {
+  background-color: #091353;
+  transition: 500ms;
+  color: white;
+  transform: scale(1.1);
+}
+
+.befor__SwitchTab:hover {
+  background-color: #FDEBF7;
+  transition: 500ms;
+  color: white;
+  transform: scale(1.1);
+}
+
+.befor__Tab:hover {
+  background-color: #AFB4FF;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.gost__Button:hover {
+  transition: all ease 1s;
+  transform: rotate( 720deg );
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modal__Component__Button:hover {
+  transition: all ease 900ms;
+  transform: scale( 1.5 )
 }
